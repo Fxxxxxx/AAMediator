@@ -1,0 +1,6 @@
+framework module AAMediator {
+  umbrella header "AAMediator-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,23 @@
+PODS:
+  - AALRUCache (1.0.2)
+  - AAMediator (0.1.0):
+    - AALRUCache
+
+DEPENDENCIES:
+  - AAMediator (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AALRUCache
+
+EXTERNAL SOURCES:
+  AAMediator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AALRUCache: 90a2066e0ae1be490fd071420972f29f038339c8
+  AAMediator: 6d0829fd9400ce1f97dfa97662d69066054a3354
+
+PODFILE CHECKSUM: bf516a630789e24bb3ef928b1cedf9e86d1075f4
+
+COCOAPODS: 1.7.5

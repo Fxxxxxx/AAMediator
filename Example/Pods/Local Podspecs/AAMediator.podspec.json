@@ -1,0 +1,27 @@
+{
+  "name": "AAMediator",
+  "version": "0.1.0",
+  "summary": "A short description of AAMediator.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Aaron Feng/AAMediator",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Aaron Feng": "516674612@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/Aaron Feng/AAMediator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AAMediator/Classes/**/*",
+  "dependencies": {
+    "AALRUCache": [
+
+    ]
+  }
+}

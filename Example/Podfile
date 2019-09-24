@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AAMediator_Example' do
+  pod 'AAMediator', :path => '../'
+
+  target 'AAMediator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
