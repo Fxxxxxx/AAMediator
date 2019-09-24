@@ -16,7 +16,7 @@ public class AAMediator: NSObject {
         return AALRUCache<String, NSObject>.init(10)
     }()
     
-    public func perform(target targetName: String, action actionName: String, module moduleName:String? = nil, params: [String: Any]) -> Any? {
+    public func perform(target targetName: String, action actionName: String, module moduleName:String? = nil, params: [String: Any]? = nil) -> Any? {
         let mName = moduleName == nil ? mainModuleName : moduleName!
         let fullName = mName + ".Target_" + targetName
         var target = targetCache[fullName]
@@ -29,7 +29,7 @@ public class AAMediator: NSObject {
         }
         let sel = NSSelectorFromString("Action_" + actionName + ":")
         if target?.responds(to: sel) ?? false {
-            return target?.perform(sel, with: params)?.takeUnretainedValue()
+            return target?.perform(sel, with: params ?? [:])?.takeUnretainedValue()
         }
         return nil
     }
