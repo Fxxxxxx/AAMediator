@@ -16,6 +16,7 @@ public class AAMediator: NSObject {
         return AALRUCache<String, NSObject>.init(10)
     }()
     
+    @discardableResult
     public func perform(target targetName: String, action actionName: String, module moduleName:String? = nil, params: [String: Any]? = nil) -> Any? {
         let mName = moduleName == nil ? mainModuleName : moduleName!
         let fullName = mName + ".Target_" + targetName
