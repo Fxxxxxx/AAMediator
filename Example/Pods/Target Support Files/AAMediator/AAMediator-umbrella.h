@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "SafePerformTool.h"
 
 FOUNDATION_EXPORT double AAMediatorVersionNumber;
 FOUNDATION_EXPORT const unsigned char AAMediatorVersionString[];

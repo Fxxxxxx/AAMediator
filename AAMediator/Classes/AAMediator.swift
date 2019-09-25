@@ -7,9 +7,8 @@
 
 import AALRUCache
 import Foundation
-import ObjectiveC
 
-public class AAMediator: NSObject {
+public class AAMediator {
     public static let shared = AAMediator()
     let mainModuleName = Bundle.main.infoDictionary?["CFBundleExecutable"] as? String ?? ""
     lazy var targetCache = {
@@ -30,7 +29,7 @@ public class AAMediator: NSObject {
         }
         let sel = NSSelectorFromString("Action_" + actionName + ":")
         if target?.responds(to: sel) ?? false {
-            return target?.perform(sel, with: params ?? [:])?.takeUnretainedValue()
+            return SafePerformTool.safePerformAction(sel, target: target!, params: params ?? [:])
         }
         return nil
     }
