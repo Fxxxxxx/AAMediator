@@ -8,9 +8,13 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```
+func perform(target targetName: String, action actionName: String, module moduleName:String? = nil, params: [String: Any]? = nil) -> Any?
+```
 
 ## Requirements
-
+- swift5  
+- iOS8.0 +
 ## Installation
 
 AAMediator is available through [CocoaPods](https://cocoapods.org). To install
@@ -22,7 +26,7 @@ pod 'AAMediator'
 
 ## Author
 
-Aaron Feng, 516674612@qq.com
+Aaron Feng, e2shao1993@163.com
 
 ## License
 
